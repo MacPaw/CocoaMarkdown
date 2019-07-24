@@ -22,7 +22,6 @@
 /**
  *  Transforms an HTML element to an attributed string.
  *
- *  @param document   The HTML element to transform.
  *  @param attributes The base attributes to be applied to the attributed string.
  *
  *  @return An attributed string.

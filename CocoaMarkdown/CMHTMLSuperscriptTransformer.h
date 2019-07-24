@@ -16,7 +16,7 @@
 #endif
 
 /**
- *  Transforms HTML superscript elements (<sup>) into attributed strings.
+ *  Transforms HTML superscript elements (<sup></sup>) into attributed strings.
  */
 @interface CMHTMLSuperscriptTransformer : CMHTMLScriptTransformer
 

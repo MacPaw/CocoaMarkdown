@@ -11,7 +11,7 @@
 #import "CMPlatformDefines.h"
 
 /**
- Transforms HTML underline elements (<u>) into attributed strings.
+ Transforms HTML underline elements (<u></u>) into attributed strings.
  */
 @interface CMHTMLUnderlineTransformer : NSObject <CMHTMLElementTransformer>
 

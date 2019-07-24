@@ -19,7 +19,6 @@
  *  Designated initializer.
  *
  *  @param document A Markdown document.
- *  @param options  Rendering options.
  *
  *  @return An initialized instance of the receiver.
  */

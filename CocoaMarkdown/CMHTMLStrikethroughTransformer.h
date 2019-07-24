@@ -11,7 +11,7 @@
 #import "CMPlatformDefines.h"
 
 /**
- Transforms HTML strikethrough elements (<s>) into attributed strings.
+ Transforms HTML strikethrough elements (<s></s>) into attributed strings.
  */
 @interface CMHTMLStrikethroughTransformer : NSObject <CMHTMLElementTransformer>
 

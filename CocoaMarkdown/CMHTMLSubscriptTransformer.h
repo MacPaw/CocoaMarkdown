@@ -16,7 +16,7 @@
 #endif
 
 /**
- *  Transforms HTML subscript elements (<sub>) into attributed strings.
+ *  Transforms HTML subscript elements (<sub></sub>) into attributed strings.
  */
 @interface CMHTMLSubscriptTransformer : CMHTMLScriptTransformer
 
