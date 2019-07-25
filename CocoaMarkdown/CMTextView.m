@@ -10,7 +10,6 @@
 #import "CMTextAttributes.h"
 #import "CMAttributedStringRenderer.h"
 #import "CMDocument.h"
-#import "NSColor+Extensions.h"
 
 @interface CMTextView()
 @property (nonatomic, strong) CMTextAttributes *markdownAttributes;
@@ -86,12 +85,12 @@
 
 - (void)setupTextAttributes
 {
-    NSColor *defaultFontColor = [NSColor respondsToSelector:@selector(defaultMarkdownTextColor)] ? NSColor.defaultMarkdownTextColor : NSColor.blackColor;
+    NSColor *defaultTextColor = [NSColor respondsToSelector:@selector(defaultMarkdownTextColor)] ? NSColor.defaultMarkdownTextColor : NSColor.blackColor;
     NSColor *defaultLinkColor = [NSColor respondsToSelector:@selector(defaultMarkdownLinkColor)] ? NSColor.defaultMarkdownLinkColor : NSColor.blueColor;
     
     CMTextAttributes *defaultAttributes = [CMTextAttributes new];
     defaultAttributes.textAttributes = @{ NSFontAttributeName: [NSFont systemFontOfSize:13],
-                                          NSForegroundColorAttributeName: defaultFontColor };
+                                          NSForegroundColorAttributeName: defaultTextColor };
     defaultAttributes.linkAttributes = @{ NSForegroundColorAttributeName: defaultLinkColor,
                                           NSCursorAttributeName: NSCursor.pointingHandCursor };
     self.markdownAttributes = defaultAttributes;

@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface NSColor (ExternalDependency)
+@property (class, readonly) NSColor *defaultMarkdownTextColor;
+@property (class, readonly) NSColor *defaultMarkdownLinkColor;
+@end
+
 @interface CMTextView : NSTextView
 @property (nonatomic, strong) NSString *markdownString;
 @property (nonatomic, strong) NSDictionary<NSAttributedStringKey, id> *customTextAttributes;
