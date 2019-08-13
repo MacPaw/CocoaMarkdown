@@ -20,6 +20,7 @@
 #import "Ono.h"
 
 @interface CMAttributedStringRenderer () <CMParserDelegate>
+@property (nonatomic, strong) NSArray<CMPlainTextTransformer *> *plainTextTransformers;
 @end
 
 @implementation CMAttributedStringRenderer {
@@ -38,6 +39,7 @@
         _document = document;
         _attributes = attributes;
         _tagNameToTransformerMapping = [[NSMutableDictionary alloc] init];
+        _plainTextTransformers = [[NSArray alloc] init];
     }
     return self;
 }
@@ -46,6 +48,12 @@
 {
     NSParameterAssert(transformer);
     _tagNameToTransformerMapping[[transformer.class tagName]] = transformer;
+}
+
+- (void)registerPlainTextTransfomers:(NSArray<CMPlainTextTransformer *> *)transformers;
+{
+    NSParameterAssert(transformers);
+    self.plainTextTransformers = transformers;
 }
 
 - (NSAttributedString *)render
@@ -85,7 +93,29 @@
     if (element != nil) {
         [element.buffer appendString:text];
     } else {
-        [self appendString:text];
+        CMNodeType nodeType = parser.currentNode.parent.type;
+        NSUInteger headerLevel = parser.currentNode.parent.headerLevel;
+        
+        CMPlainTextTransformer *transfomer = nil;
+        for (CMPlainTextTransformer *t in self.plainTextTransformers)
+        {
+            BOOL isSameNonHeaderNode = nodeType != CMNodeTypeHeader && nodeType == t.nodeType;
+            BOOL isSameHeaderNode = nodeType == CMNodeTypeHeader && nodeType == t.nodeType && headerLevel == t.headerLevel;
+            if (isSameHeaderNode || isSameNonHeaderNode)
+            {
+                transfomer = t;
+                break;
+            }
+        }
+        
+        if (transfomer)
+        {
+            [self appendString:transfomer.block(text)];
+        }
+        else
+        {
+            [self appendString:text];
+        }
     }
 }
 
@@ -103,10 +133,19 @@
 - (void)parserDidStartParagraph:(CMParser *)parser
 {
     if (![self nodeIsInTightMode:parser.currentNode]) {
-        NSMutableParagraphStyle* paragraphStyle = [NSMutableParagraphStyle new];
-        paragraphStyle.paragraphSpacingBefore = 12;
-        
-        [_attributeStack push:CMDefaultAttributeRun(@{NSParagraphStyleAttributeName: paragraphStyle})];
+        NSParagraphStyle *paragraphStyle = _attributes.textAttributes[NSParagraphStyleAttributeName];
+        if (paragraphStyle)
+        {
+            NSMutableParagraphStyle *mutableStyle = [paragraphStyle mutableCopy];
+            mutableStyle.paragraphSpacingBefore = 12;
+            [_attributeStack push:CMDefaultAttributeRun(@{NSParagraphStyleAttributeName: mutableStyle.copy})];
+        }
+        else
+        {
+            NSMutableParagraphStyle* newParagraphStyle = [NSMutableParagraphStyle new];
+            newParagraphStyle.paragraphSpacingBefore = 12;
+            [_attributeStack push:CMDefaultAttributeRun(@{NSParagraphStyleAttributeName: newParagraphStyle.copy})];
+        }
     }
 }
 
@@ -230,7 +269,7 @@
 - (void)parser:(CMParser *)parser didStartUnorderedListWithTightness:(BOOL)tight
 {
     [_attributeStack push:CMDefaultAttributeRun([self listAttributesForNode:parser.currentNode])];
-    [self appendString:@"\n"];
+//    [self appendString:@"\n"];
 }
 
 - (void)parser:(CMParser *)parser didEndUnorderedListWithTightness:(BOOL)tight
@@ -241,7 +280,7 @@
 - (void)parser:(CMParser *)parser didStartOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight
 {
     [_attributeStack push:CMOrderedListAttributeRun([self listAttributesForNode:parser.currentNode], num)];
-    [self appendString:@"\n"];
+//    [self appendString:@"\n"];
 }
 
 - (void)parser:(CMParser *)parser didEndOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight

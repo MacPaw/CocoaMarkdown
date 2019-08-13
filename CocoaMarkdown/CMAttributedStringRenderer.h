@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CMPlainTextTransformer.h"
 
 @class CMDocument;
 @class CMTextAttributes;
@@ -43,5 +44,7 @@
  *  styled using the attributes set on the receiver.
  */
 - (NSAttributedString *)render;
+
+- (void)registerPlainTextTransfomers:(NSArray<CMPlainTextTransformer *> *)transformers;
 
 @end
