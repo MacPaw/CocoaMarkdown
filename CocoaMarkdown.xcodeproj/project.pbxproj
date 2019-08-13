@@ -11,10 +11,10 @@
 		06D9F8781A70465700C00B67 /* CMHTMLUnderlineTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9F8751A70465700C00B67 /* CMHTMLUnderlineTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06D9F8791A70465700C00B67 /* CMHTMLUnderlineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */; };
 		06D9F87A1A70465700C00B67 /* CMHTMLUnderlineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */; };
-		2F662ECE2302F6B700FB80B5 /* CMPlainTextTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F662ECC2302F6B700FB80B5 /* CMPlainTextTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F662ECF2302F6B700FB80B5 /* CMPlainTextTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F662ECC2302F6B700FB80B5 /* CMPlainTextTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F662ED02302F6B700FB80B5 /* CMPlainTextTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F662ECD2302F6B700FB80B5 /* CMPlainTextTransformer.m */; };
-		2F662ED12302F6B700FB80B5 /* CMPlainTextTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F662ECD2302F6B700FB80B5 /* CMPlainTextTransformer.m */; };
+		2F739FF723034E8F00FB4BD5 /* CMNodeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F739FF823034E8F00FB4BD5 /* CMNodeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F739FF923034E8F00FB4BD5 /* CMNodeKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */; };
+		2F739FFA23034E8F00FB4BD5 /* CMNodeKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */; };
 		30A07BCC1B5545A50097CEF1 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 30A07BCB1B5545A50097CEF1 /* render.c */; };
 		30A07BCD1B5545A50097CEF1 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 30A07BCB1B5545A50097CEF1 /* render.c */; };
 		722E33E01A68E7E4004DE919 /* CMAttributeRun.h in Headers */ = {isa = PBXBuildFile; fileRef = 722E33DE1A68E7E4004DE919 /* CMAttributeRun.h */; };
@@ -146,8 +146,8 @@
 /* Begin PBXFileReference section */
 		06D9F8751A70465700C00B67 /* CMHTMLUnderlineTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHTMLUnderlineTransformer.h; sourceTree = "<group>"; };
 		06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHTMLUnderlineTransformer.m; sourceTree = "<group>"; };
-		2F662ECC2302F6B700FB80B5 /* CMPlainTextTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPlainTextTransformer.h; sourceTree = "<group>"; };
-		2F662ECD2302F6B700FB80B5 /* CMPlainTextTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPlainTextTransformer.m; sourceTree = "<group>"; };
+		2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMNodeKey.h; sourceTree = "<group>"; };
+		2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMNodeKey.m; sourceTree = "<group>"; };
 		30A07BCB1B5545A50097CEF1 /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = render.c; path = External/cmark/src/render.c; sourceTree = "<group>"; };
 		722E33DE1A68E7E4004DE919 /* CMAttributeRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAttributeRun.h; sourceTree = "<group>"; };
 		722E33DF1A68E7E4004DE919 /* CMAttributeRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAttributeRun.m; sourceTree = "<group>"; };
@@ -271,8 +271,6 @@
 				7251160F1A69762800337419 /* HTML */,
 				729F54141A6864F400CC7448 /* CMAttributedStringRenderer.h */,
 				729F54151A6864F400CC7448 /* CMAttributedStringRenderer.m */,
-				2F662ECC2302F6B700FB80B5 /* CMPlainTextTransformer.h */,
-				2F662ECD2302F6B700FB80B5 /* CMPlainTextTransformer.m */,
 				722E33DE1A68E7E4004DE919 /* CMAttributeRun.h */,
 				722E33DF1A68E7E4004DE919 /* CMAttributeRun.m */,
 				722E33EA1A68EADA004DE919 /* CMCascadingAttributeStack.h */,
@@ -385,6 +383,8 @@
 				729F541A1A6864F400CC7448 /* CMNode_Private.h */,
 				729F541B1A6864F400CC7448 /* CMNode.h */,
 				729F541C1A6864F400CC7448 /* CMNode.m */,
+				2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */,
+				2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */,
 				729F541D1A6864F400CC7448 /* CMParser.h */,
 				729F541E1A6864F400CC7448 /* CMParser.m */,
 			);
@@ -412,6 +412,7 @@
 				06D9F8771A70465700C00B67 /* CMHTMLUnderlineTransformer.h in Headers */,
 				722E33E61A68E86B004DE919 /* CMTextAttributes.h in Headers */,
 				72C17A991A6EBD7800212F17 /* CMDocument+HTMLAdditions.h in Headers */,
+				2F739FF723034E8F00FB4BD5 /* CMNodeKey.h in Headers */,
 				729F54301A6864F400CC7448 /* CMNode.h in Headers */,
 				72772BE61A69ABB20059936C /* CMHTMLStrikethroughTransformer.h in Headers */,
 				725115E01A6970A300337419 /* CMStack.h in Headers */,
@@ -435,7 +436,6 @@
 				729F54381A6864F400CC7448 /* CMPlatformDefines.h in Headers */,
 				729F53E01A68641400CC7448 /* CocoaMarkdown.h in Headers */,
 				729F542E1A6864F400CC7448 /* CMNode_Private.h in Headers */,
-				2F662ECE2302F6B700FB80B5 /* CMPlainTextTransformer.h in Headers */,
 				72C17A811A6EB75800212F17 /* CMDocument+AttributedStringAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +447,7 @@
 				725115F61A6972AE00337419 /* CMHTMLElementTransformer.h in Headers */,
 				729F54231A6864F400CC7448 /* CMAttributedStringRenderer.h in Headers */,
 				725115FF1A69735400337419 /* ONOXMLDocument.h in Headers */,
+				2F739FF823034E8F00FB4BD5 /* CMNodeKey.h in Headers */,
 				729F54271A6864F400CC7448 /* CMDocument.h in Headers */,
 				72772BF81A6A29810059936C /* CMHTMLScriptTransformer_Private.h in Headers */,
 				729F54351A6864F400CC7448 /* CMParser.h in Headers */,
@@ -470,7 +471,6 @@
 				72C17A821A6EB75800212F17 /* CMDocument+AttributedStringAdditions.h in Headers */,
 				722E33ED1A68EADA004DE919 /* CMCascadingAttributeStack.h in Headers */,
 				72772BE71A69ABB20059936C /* CMHTMLStrikethroughTransformer.h in Headers */,
-				2F662ECF2302F6B700FB80B5 /* CMPlainTextTransformer.h in Headers */,
 				729F542F1A6864F400CC7448 /* CMNode_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,10 +605,10 @@
 				729F54241A6864F400CC7448 /* CMAttributedStringRenderer.m in Sources */,
 				722E33E81A68E86B004DE919 /* CMTextAttributes.m in Sources */,
 				725A600B1AEC5F9F00D6342C /* xml.c in Sources */,
+				2F739FF923034E8F00FB4BD5 /* CMNodeKey.m in Sources */,
 				72C17A9B1A6EBD7800212F17 /* CMDocument+HTMLAdditions.m in Sources */,
 				725A5FFF1AEC5F9F00D6342C /* iterator.c in Sources */,
 				725A60071AEC5F9F00D6342C /* scanners.c in Sources */,
-				2F662ED02302F6B700FB80B5 /* CMPlainTextTransformer.m in Sources */,
 				725A5FFB1AEC5F9F00D6342C /* html.c in Sources */,
 				72772BE81A69ABB20059936C /* CMHTMLStrikethroughTransformer.m in Sources */,
 				725A5FF11AEC5F9F00D6342C /* cmark.c in Sources */,
@@ -650,10 +650,10 @@
 				729F54251A6864F400CC7448 /* CMAttributedStringRenderer.m in Sources */,
 				722E33E91A68E86B004DE919 /* CMTextAttributes.m in Sources */,
 				725A600C1AEC5F9F00D6342C /* xml.c in Sources */,
+				2F739FFA23034E8F00FB4BD5 /* CMNodeKey.m in Sources */,
 				72C17A9C1A6EBD7800212F17 /* CMDocument+HTMLAdditions.m in Sources */,
 				725A60001AEC5F9F00D6342C /* iterator.c in Sources */,
 				725A60081AEC5F9F00D6342C /* scanners.c in Sources */,
-				2F662ED12302F6B700FB80B5 /* CMPlainTextTransformer.m in Sources */,
 				725A5FFC1AEC5F9F00D6342C /* html.c in Sources */,
 				72772BE91A69ABB20059936C /* CMHTMLStrikethroughTransformer.m in Sources */,
 				725A5FF21AEC5F9F00D6342C /* cmark.c in Sources */,

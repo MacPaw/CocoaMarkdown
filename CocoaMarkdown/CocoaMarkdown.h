@@ -25,7 +25,7 @@ FOUNDATION_EXPORT const unsigned char CocoaMarkdownVersionString[];
 #import <CocoaMarkdown/CMHTMLSubscriptTransformer.h>
 #import <CocoaMarkdown/CMIterator.h>
 #import <CocoaMarkdown/CMNode.h>
+#import <CocoaMarkdown/CMNodeKey.h>
 #import <CocoaMarkdown/CMParser.h>
 #import <CocoaMarkdown/CMTextAttributes.h>
-#import <CocoaMarkdown/CMPlainTextTransformer.h>
 #import "Ono.h"

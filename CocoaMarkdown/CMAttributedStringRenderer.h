@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMPlainTextTransformer.h"
 
 @class CMDocument;
+@class CMNodeKey;
 @class CMTextAttributes;
 @protocol CMHTMLElementTransformer;
 /**
@@ -45,6 +45,7 @@
  */
 - (NSAttributedString *)render;
 
-- (void)registerPlainTextTransfomers:(NSArray<CMPlainTextTransformer *> *)transformers;
+typedef NSString * (^CMPlainTextTransformerBlock)(NSString *string);
+- (void)registerPlainTextTransfomers:(NSDictionary<CMNodeKey *, CMPlainTextTransformerBlock> *)transformersMap;
 
 @end
