@@ -31,4 +31,15 @@
     return [[CMNodeKey alloc] initWithNodeType:self.nodeType headerLevel:self.headerLevel];
 }
 
+- (NSUInteger)hash
+{
+    return self.nodeType ^ self.headerLevel;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    CMNodeKey *other = [object isKindOfClass:self] ? object : nil;
+    return other && self.nodeType == other.nodeType && self.headerLevel == other.headerLevel;
+}
+
 @end
