@@ -38,7 +38,7 @@
 
 - (BOOL)isEqual:(id)object
 {
-    CMNodeKey *other = [object isKindOfClass:self] ? object : nil;
+    CMNodeKey *other = [object isKindOfClass:self.class] ? object : nil;
     return other && self.nodeType == other.nodeType && self.headerLevel == other.headerLevel;
 }
 

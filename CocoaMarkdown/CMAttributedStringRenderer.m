@@ -97,15 +97,8 @@
         CMNodeType currentNodeType = parser.currentNode.parent.type;
         NSUInteger currentHeaderLevel = parser.currentNode.parent.headerLevel;
         
-        CMPlainTextTransformerBlock transfomerBlock = nil;
-        for (CMNodeKey *nodeKey in self.plainTextTransformersMap)
-        {
-            if (nodeKey.nodeType == currentNodeType && nodeKey.headerLevel == currentHeaderLevel)
-            {
-                transfomerBlock = self.plainTextTransformersMap[nodeKey];
-                break;
-            }
-        }
+        CMNodeKey *nodeKey = [[CMNodeKey alloc] initWithNodeType:currentNodeType headerLevel:currentHeaderLevel];
+        CMPlainTextTransformerBlock transfomerBlock = self.plainTextTransformersMap[nodeKey];
         
         if (transfomerBlock)
         {
