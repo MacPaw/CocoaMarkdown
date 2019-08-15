@@ -15,11 +15,13 @@
 #import "CMHTMLUtilities.h"
 #import "CMTextAttributes.h"
 #import "CMNode.h"
+#import "CMNodeKey.h"
 #import "CMParser.h"
 
 #import "Ono.h"
 
 @interface CMAttributedStringRenderer () <CMParserDelegate>
+@property (nonatomic, strong) NSDictionary<CMNodeKey *, CMPlainTextTransformerBlock> *plainTextTransformersMap;
 @end
 
 @implementation CMAttributedStringRenderer {
@@ -38,6 +40,7 @@
         _document = document;
         _attributes = attributes;
         _tagNameToTransformerMapping = [[NSMutableDictionary alloc] init];
+        _plainTextTransformersMap = [[NSDictionary alloc] init];
     }
     return self;
 }
@@ -46,6 +49,12 @@
 {
     NSParameterAssert(transformer);
     _tagNameToTransformerMapping[[transformer.class tagName]] = transformer;
+}
+
+- (void)registerPlainTextTransfomers:(NSDictionary<CMNodeKey *, CMPlainTextTransformerBlock> *)transformersMap;
+{
+    NSParameterAssert(transformersMap);
+    self.plainTextTransformersMap = transformersMap;
 }
 
 - (NSAttributedString *)render
@@ -85,7 +94,20 @@
     if (element != nil) {
         [element.buffer appendString:text];
     } else {
-        [self appendString:text];
+        CMNodeType currentNodeType = parser.currentNode.parent.type;
+        NSUInteger currentHeaderLevel = parser.currentNode.parent.headerLevel;
+        
+        CMNodeKey *nodeKey = [[CMNodeKey alloc] initWithNodeType:currentNodeType headerLevel:currentHeaderLevel];
+        CMPlainTextTransformerBlock transfomerBlock = self.plainTextTransformersMap[nodeKey];
+        
+        if (transfomerBlock)
+        {
+            [self appendString:transfomerBlock(text)];
+        }
+        else
+        {
+            [self appendString:text];
+        }
     }
 }
 
@@ -103,10 +125,10 @@
 - (void)parserDidStartParagraph:(CMParser *)parser
 {
     if (![self nodeIsInTightMode:parser.currentNode]) {
-        NSMutableParagraphStyle* paragraphStyle = [NSMutableParagraphStyle new];
-        paragraphStyle.paragraphSpacingBefore = 12;
-        
-        [_attributeStack push:CMDefaultAttributeRun(@{NSParagraphStyleAttributeName: paragraphStyle})];
+        NSParagraphStyle *paragraphStyle = _attributes.textAttributes[NSParagraphStyleAttributeName];
+        NSMutableParagraphStyle *updatedParagraphStyle = paragraphStyle ? [paragraphStyle mutableCopy] : [NSMutableParagraphStyle new];
+        updatedParagraphStyle.paragraphSpacingBefore = 12;
+        [_attributeStack push:CMDefaultAttributeRun(@{NSParagraphStyleAttributeName: updatedParagraphStyle.copy})];
     }
 }
 
@@ -230,7 +252,6 @@
 - (void)parser:(CMParser *)parser didStartUnorderedListWithTightness:(BOOL)tight
 {
     [_attributeStack push:CMDefaultAttributeRun([self listAttributesForNode:parser.currentNode])];
-    [self appendString:@"\n"];
 }
 
 - (void)parser:(CMParser *)parser didEndUnorderedListWithTightness:(BOOL)tight
@@ -241,7 +262,6 @@
 - (void)parser:(CMParser *)parser didStartOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight
 {
     [_attributeStack push:CMOrderedListAttributeRun([self listAttributesForNode:parser.currentNode], num)];
-    [self appendString:@"\n"];
 }
 
 - (void)parser:(CMParser *)parser didEndOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight

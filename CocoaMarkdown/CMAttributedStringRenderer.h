@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class CMDocument;
+@class CMNodeKey;
 @class CMTextAttributes;
 @protocol CMHTMLElementTransformer;
 /**
@@ -43,5 +44,8 @@
  *  styled using the attributes set on the receiver.
  */
 - (NSAttributedString *)render;
+
+typedef NSString * (^CMPlainTextTransformerBlock)(NSString *string);
+- (void)registerPlainTextTransfomers:(NSDictionary<CMNodeKey *, CMPlainTextTransformerBlock> *)transformersMap;
 
 @end
