@@ -252,6 +252,10 @@
 - (void)parser:(CMParser *)parser didStartUnorderedListWithTightness:(BOOL)tight
 {
     [_attributeStack push:CMDefaultAttributeRun([self listAttributesForNode:parser.currentNode])];
+    if ([self sublistLevel:parser.currentNode] > 1)
+    {
+        [self appendString:@"\n"];
+    }
 }
 
 - (void)parser:(CMParser *)parser didEndUnorderedListWithTightness:(BOOL)tight
@@ -262,6 +266,10 @@
 - (void)parser:(CMParser *)parser didStartOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight
 {
     [_attributeStack push:CMOrderedListAttributeRun([self listAttributesForNode:parser.currentNode], num)];
+    if ([self sublistLevel:parser.currentNode] > 1)
+    {
+        [self appendString:@"\n"];
+    }
 }
 
 - (void)parser:(CMParser *)parser didEndOrderedListWithStartingNumber:(NSInteger)num tight:(BOOL)tight
