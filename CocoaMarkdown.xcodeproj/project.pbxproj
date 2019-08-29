@@ -11,6 +11,73 @@
 		06D9F8781A70465700C00B67 /* CMHTMLUnderlineTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9F8751A70465700C00B67 /* CMHTMLUnderlineTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06D9F8791A70465700C00B67 /* CMHTMLUnderlineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */; };
 		06D9F87A1A70465700C00B67 /* CMHTMLUnderlineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */; };
+		2F2B16A32316A9C600E78AF4 /* CMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F54171A6864F400CC7448 /* CMDocument.m */; };
+		2F2B16A42316A9C900E78AF4 /* CMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F54161A6864F400CC7448 /* CMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16A52316A9E000E78AF4 /* CMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 728FA12E1AEED87900C7A368 /* CMDocument_Private.h */; };
+		2F2B16A62316A9E000E78AF4 /* CMIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F54181A6864F400CC7448 /* CMIterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16A72316A9E000E78AF4 /* CMIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F54191A6864F400CC7448 /* CMIterator.m */; };
+		2F2B16A82316A9E000E78AF4 /* CMNode_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F541A1A6864F400CC7448 /* CMNode_Private.h */; };
+		2F2B16A92316A9E000E78AF4 /* CMNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F541B1A6864F400CC7448 /* CMNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16AA2316A9E000E78AF4 /* CMNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F541C1A6864F400CC7448 /* CMNode.m */; };
+		2F2B16AB2316A9E000E78AF4 /* CMNodeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16AC2316A9E000E78AF4 /* CMNodeKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */; };
+		2F2B16AD2316A9E000E78AF4 /* CMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F541D1A6864F400CC7448 /* CMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16AE2316A9E000E78AF4 /* CMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F541E1A6864F400CC7448 /* CMParser.m */; };
+		2F2B16AF2316AADF00E78AF4 /* CocoaMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F53DF1A68641400CC7448 /* CocoaMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16B02316AAE400E78AF4 /* CMPlatformDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F541F1A6864F400CC7448 /* CMPlatformDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16B12316AB1F00E78AF4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 725116041A6973AC00337419 /* libxml2.dylib */; };
+		2F2B16B22316AB2E00E78AF4 /* CMHTMLRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C17A911A6EBA3300212F17 /* CMHTMLRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16B32316AB2E00E78AF4 /* CMHTMLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C17A921A6EBA3300212F17 /* CMHTMLRenderer.m */; };
+		2F2B16B42316AB2E00E78AF4 /* CMDocument+HTMLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C17A971A6EBD7800212F17 /* CMDocument+HTMLAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16B52316AB2E00E78AF4 /* CMDocument+HTMLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C17A981A6EBD7800212F17 /* CMDocument+HTMLAdditions.m */; };
+		2F2B16B62316AB3D00E78AF4 /* CMAttributedStringRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 729F54141A6864F400CC7448 /* CMAttributedStringRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16B72316AB3D00E78AF4 /* CMAttributedStringRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 729F54151A6864F400CC7448 /* CMAttributedStringRenderer.m */; };
+		2F2B16B82316AB3D00E78AF4 /* CMAttributeRun.h in Headers */ = {isa = PBXBuildFile; fileRef = 722E33DE1A68E7E4004DE919 /* CMAttributeRun.h */; };
+		2F2B16B92316AB3D00E78AF4 /* CMAttributeRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 722E33DF1A68E7E4004DE919 /* CMAttributeRun.m */; };
+		2F2B16BA2316AB3D00E78AF4 /* CMCascadingAttributeStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 722E33EA1A68EADA004DE919 /* CMCascadingAttributeStack.h */; };
+		2F2B16BB2316AB3D00E78AF4 /* CMCascadingAttributeStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 722E33EB1A68EADA004DE919 /* CMCascadingAttributeStack.m */; };
+		2F2B16BC2316AB3D00E78AF4 /* CMStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 725115DE1A6970A300337419 /* CMStack.h */; };
+		2F2B16BD2316AB3D00E78AF4 /* CMStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 725115DF1A6970A300337419 /* CMStack.m */; };
+		2F2B16BE2316AB3D00E78AF4 /* CMTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 722E33E41A68E86B004DE919 /* CMTextAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16BF2316AB3D00E78AF4 /* CMTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 722E33E51A68E86B004DE919 /* CMTextAttributes.m */; };
+		2F2B16C02316AB3D00E78AF4 /* CMDocument+AttributedStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C17A7F1A6EB75800212F17 /* CMDocument+AttributedStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16C12316AB3D00E78AF4 /* CMDocument+AttributedStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C17A801A6EB75800212F17 /* CMDocument+AttributedStringAdditions.m */; };
+		2F2B16C22316AB5900E78AF4 /* CMHTMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 725116071A69760A00337419 /* CMHTMLElement.h */; };
+		2F2B16C32316AB5900E78AF4 /* CMHTMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 725116081A69760A00337419 /* CMHTMLElement.m */; };
+		2F2B16C42316AB5900E78AF4 /* CMHTMLElementTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 725115F41A6972AE00337419 /* CMHTMLElementTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16C52316AB5900E78AF4 /* CMHTMLUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BD41A699ACA0059936C /* CMHTMLUtilities.h */; };
+		2F2B16C62316AB5900E78AF4 /* CMHTMLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 72772BD51A699ACA0059936C /* CMHTMLUtilities.m */; };
+		2F2B16C72316AB5900E78AF4 /* CMHTMLStrikethroughTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BE41A69ABB20059936C /* CMHTMLStrikethroughTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16C82316AB5900E78AF4 /* CMHTMLStrikethroughTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72772BE51A69ABB20059936C /* CMHTMLStrikethroughTransformer.m */; };
+		2F2B16C92316AB5900E78AF4 /* CMHTMLSuperscriptTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BEA1A6A22720059936C /* CMHTMLSuperscriptTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16CA2316AB5900E78AF4 /* CMHTMLSuperscriptTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72772BEB1A6A22720059936C /* CMHTMLSuperscriptTransformer.m */; };
+		2F2B16CB2316AB5900E78AF4 /* CMHTMLSubscriptTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BF91A6A2B5C0059936C /* CMHTMLSubscriptTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16CC2316AB5900E78AF4 /* CMHTMLSubscriptTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72772BFA1A6A2B5C0059936C /* CMHTMLSubscriptTransformer.m */; };
+		2F2B16CD2316AB5900E78AF4 /* CMHTMLScriptTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BF01A6A28A70059936C /* CMHTMLScriptTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16CE2316AB5900E78AF4 /* CMHTMLScriptTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72772BF11A6A28A70059936C /* CMHTMLScriptTransformer.m */; };
+		2F2B16CF2316AB5900E78AF4 /* CMHTMLScriptTransformer_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 72772BF61A6A29810059936C /* CMHTMLScriptTransformer_Private.h */; };
+		2F2B16D02316AB5900E78AF4 /* CMHTMLUnderlineTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D9F8751A70465700C00B67 /* CMHTMLUnderlineTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16D12316AB5900E78AF4 /* CMHTMLUnderlineTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */; };
+		2F2B16D22316AE3000E78AF4 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FDA1AEC5F9F00D6342C /* blocks.c */; };
+		2F2B16D32316AE3700E78AF4 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FDB1AEC5F9F00D6342C /* buffer.c */; };
+		2F2B16D42316AE3700E78AF4 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FDC1AEC5F9F00D6342C /* cmark_ctype.c */; };
+		2F2B16D52316AE3700E78AF4 /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FDD1AEC5F9F00D6342C /* cmark.c */; };
+		2F2B16D62316AE3700E78AF4 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FDF1AEC5F9F00D6342C /* houdini_href_e.c */; };
+		2F2B16D72316AE3700E78AF4 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE01AEC5F9F00D6342C /* houdini_html_e.c */; };
+		2F2B16D82316AE3700E78AF4 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE11AEC5F9F00D6342C /* houdini_html_u.c */; };
+		2F2B16D92316AE3700E78AF4 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE21AEC5F9F00D6342C /* html.c */; };
+		2F2B16DA2316AE3700E78AF4 /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE31AEC5F9F00D6342C /* inlines.c */; };
+		2F2B16DB2316AE3700E78AF4 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE41AEC5F9F00D6342C /* iterator.c */; };
+		2F2B16DC2316AE3700E78AF4 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE51AEC5F9F00D6342C /* man.c */; };
+		2F2B16DD2316AE3700E78AF4 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE61AEC5F9F00D6342C /* node.c */; };
+		2F2B16DE2316AE3700E78AF4 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE71AEC5F9F00D6342C /* references.c */; };
+		2F2B16DF2316AE3700E78AF4 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 30A07BCB1B5545A50097CEF1 /* render.c */; };
+		2F2B16E02316AE3700E78AF4 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE81AEC5F9F00D6342C /* scanners.c */; };
+		2F2B16E12316AE3700E78AF4 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FE91AEC5F9F00D6342C /* utf8.c */; };
+		2F2B16E22316AE3700E78AF4 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 725A5FEA1AEC5F9F00D6342C /* xml.c */; };
+		2F2B16E32316AE4000E78AF4 /* Ono.h in Headers */ = {isa = PBXBuildFile; fileRef = 725115F91A69735400337419 /* Ono.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16E42316AE4000E78AF4 /* ONOXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 725115FA1A69735400337419 /* ONOXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F2B16E52316AE4000E78AF4 /* ONOXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 725115FB1A69735400337419 /* ONOXMLDocument.m */; };
 		2F739FF723034E8F00FB4BD5 /* CMNodeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F739FF823034E8F00FB4BD5 /* CMNodeKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F739FF923034E8F00FB4BD5 /* CMNodeKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */; };
@@ -146,6 +213,7 @@
 /* Begin PBXFileReference section */
 		06D9F8751A70465700C00B67 /* CMHTMLUnderlineTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHTMLUnderlineTransformer.h; sourceTree = "<group>"; };
 		06D9F8761A70465700C00B67 /* CMHTMLUnderlineTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHTMLUnderlineTransformer.m; sourceTree = "<group>"; };
+		2F2B16982316A9A900E78AF4 /* libCocoaMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F739FF523034E8F00FB4BD5 /* CMNodeKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMNodeKey.h; sourceTree = "<group>"; };
 		2F739FF623034E8F00FB4BD5 /* CMNodeKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMNodeKey.m; sourceTree = "<group>"; };
 		30A07BCB1B5545A50097CEF1 /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = render.c; path = External/cmark/src/render.c; sourceTree = "<group>"; };
@@ -218,6 +286,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2F2B16962316A9A900E78AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B16B12316AB1F00E78AF4 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		729F53D61A68641400CC7448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +398,7 @@
 			children = (
 				729F53DA1A68641400CC7448 /* CocoaMarkdown.framework */,
 				729F53FB1A68649200CC7448 /* CocoaMarkdown.framework */,
+				2F2B16982316A9A900E78AF4 /* libCocoaMarkdown.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,6 +482,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2F2B16942316A9A900E78AF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B16A92316A9E000E78AF4 /* CMNode.h in Headers */,
+				2F2B16C92316AB5900E78AF4 /* CMHTMLSuperscriptTransformer.h in Headers */,
+				2F2B16BE2316AB3D00E78AF4 /* CMTextAttributes.h in Headers */,
+				2F2B16C02316AB3D00E78AF4 /* CMDocument+AttributedStringAdditions.h in Headers */,
+				2F2B16A62316A9E000E78AF4 /* CMIterator.h in Headers */,
+				2F2B16B02316AAE400E78AF4 /* CMPlatformDefines.h in Headers */,
+				2F2B16B22316AB2E00E78AF4 /* CMHTMLRenderer.h in Headers */,
+				2F2B16E42316AE4000E78AF4 /* ONOXMLDocument.h in Headers */,
+				2F2B16C52316AB5900E78AF4 /* CMHTMLUtilities.h in Headers */,
+				2F2B16D02316AB5900E78AF4 /* CMHTMLUnderlineTransformer.h in Headers */,
+				2F2B16BA2316AB3D00E78AF4 /* CMCascadingAttributeStack.h in Headers */,
+				2F2B16BC2316AB3D00E78AF4 /* CMStack.h in Headers */,
+				2F2B16A52316A9E000E78AF4 /* CMDocument_Private.h in Headers */,
+				2F2B16AB2316A9E000E78AF4 /* CMNodeKey.h in Headers */,
+				2F2B16C72316AB5900E78AF4 /* CMHTMLStrikethroughTransformer.h in Headers */,
+				2F2B16C22316AB5900E78AF4 /* CMHTMLElement.h in Headers */,
+				2F2B16B62316AB3D00E78AF4 /* CMAttributedStringRenderer.h in Headers */,
+				2F2B16AD2316A9E000E78AF4 /* CMParser.h in Headers */,
+				2F2B16CD2316AB5900E78AF4 /* CMHTMLScriptTransformer.h in Headers */,
+				2F2B16CB2316AB5900E78AF4 /* CMHTMLSubscriptTransformer.h in Headers */,
+				2F2B16C42316AB5900E78AF4 /* CMHTMLElementTransformer.h in Headers */,
+				2F2B16A42316A9C900E78AF4 /* CMDocument.h in Headers */,
+				2F2B16A82316A9E000E78AF4 /* CMNode_Private.h in Headers */,
+				2F2B16E32316AE4000E78AF4 /* Ono.h in Headers */,
+				2F2B16B42316AB2E00E78AF4 /* CMDocument+HTMLAdditions.h in Headers */,
+				2F2B16AF2316AADF00E78AF4 /* CocoaMarkdown.h in Headers */,
+				2F2B16CF2316AB5900E78AF4 /* CMHTMLScriptTransformer_Private.h in Headers */,
+				2F2B16B82316AB3D00E78AF4 /* CMAttributeRun.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		729F53D71A68641400CC7448 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +590,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2F2B16972316A9A900E78AF4 /* libCocoaMarkdown-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2B169E2316A9A900E78AF4 /* Build configuration list for PBXNativeTarget "libCocoaMarkdown-Mac" */;
+			buildPhases = (
+				2F2B16942316A9A900E78AF4 /* Headers */,
+				2F2B16952316A9A900E78AF4 /* Sources */,
+				2F2B16962316A9A900E78AF4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libCocoaMarkdown-Mac";
+			productName = "libCocoaMarkdown-Mac";
+			productReference = 2F2B16982316A9A900E78AF4 /* libCocoaMarkdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		729F53D91A68641400CC7448 /* CocoaMarkdown-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 729F53F01A68641400CC7448 /* Build configuration list for PBXNativeTarget "CocoaMarkdown-iOS" */;
@@ -524,6 +653,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Indragie Karunaratne";
 				TargetAttributes = {
+					2F2B16972316A9A900E78AF4 = {
+						CreatedOnToolsVersion = 10.3;
+						DevelopmentTeam = MEHY5QF425;
+						ProvisioningStyle = Automatic;
+					};
 					729F53D91A68641400CC7448 = {
 						CreatedOnToolsVersion = 6.1.1;
 						LastSwiftMigration = 0830;
@@ -549,6 +683,7 @@
 			targets = (
 				729F53D91A68641400CC7448 /* CocoaMarkdown-iOS */,
 				729F53FA1A68649200CC7448 /* CocoaMarkdown-Mac */,
+				2F2B16972316A9A900E78AF4 /* libCocoaMarkdown-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -571,6 +706,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2F2B16952316A9A900E78AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2B16E12316AE3700E78AF4 /* utf8.c in Sources */,
+				2F2B16D42316AE3700E78AF4 /* cmark_ctype.c in Sources */,
+				2F2B16C32316AB5900E78AF4 /* CMHTMLElement.m in Sources */,
+				2F2B16BF2316AB3D00E78AF4 /* CMTextAttributes.m in Sources */,
+				2F2B16D52316AE3700E78AF4 /* cmark.c in Sources */,
+				2F2B16BB2316AB3D00E78AF4 /* CMCascadingAttributeStack.m in Sources */,
+				2F2B16D92316AE3700E78AF4 /* html.c in Sources */,
+				2F2B16A72316A9E000E78AF4 /* CMIterator.m in Sources */,
+				2F2B16BD2316AB3D00E78AF4 /* CMStack.m in Sources */,
+				2F2B16AA2316A9E000E78AF4 /* CMNode.m in Sources */,
+				2F2B16A32316A9C600E78AF4 /* CMDocument.m in Sources */,
+				2F2B16DB2316AE3700E78AF4 /* iterator.c in Sources */,
+				2F2B16DD2316AE3700E78AF4 /* node.c in Sources */,
+				2F2B16D22316AE3000E78AF4 /* blocks.c in Sources */,
+				2F2B16B72316AB3D00E78AF4 /* CMAttributedStringRenderer.m in Sources */,
+				2F2B16D32316AE3700E78AF4 /* buffer.c in Sources */,
+				2F2B16B52316AB2E00E78AF4 /* CMDocument+HTMLAdditions.m in Sources */,
+				2F2B16C82316AB5900E78AF4 /* CMHTMLStrikethroughTransformer.m in Sources */,
+				2F2B16CA2316AB5900E78AF4 /* CMHTMLSuperscriptTransformer.m in Sources */,
+				2F2B16DC2316AE3700E78AF4 /* man.c in Sources */,
+				2F2B16E22316AE3700E78AF4 /* xml.c in Sources */,
+				2F2B16C12316AB3D00E78AF4 /* CMDocument+AttributedStringAdditions.m in Sources */,
+				2F2B16AE2316A9E000E78AF4 /* CMParser.m in Sources */,
+				2F2B16B32316AB2E00E78AF4 /* CMHTMLRenderer.m in Sources */,
+				2F2B16D62316AE3700E78AF4 /* houdini_href_e.c in Sources */,
+				2F2B16D12316AB5900E78AF4 /* CMHTMLUnderlineTransformer.m in Sources */,
+				2F2B16DE2316AE3700E78AF4 /* references.c in Sources */,
+				2F2B16E52316AE4000E78AF4 /* ONOXMLDocument.m in Sources */,
+				2F2B16C62316AB5900E78AF4 /* CMHTMLUtilities.m in Sources */,
+				2F2B16B92316AB3D00E78AF4 /* CMAttributeRun.m in Sources */,
+				2F2B16E02316AE3700E78AF4 /* scanners.c in Sources */,
+				2F2B16DF2316AE3700E78AF4 /* render.c in Sources */,
+				2F2B16D72316AE3700E78AF4 /* houdini_html_e.c in Sources */,
+				2F2B16CE2316AB5900E78AF4 /* CMHTMLScriptTransformer.m in Sources */,
+				2F2B16DA2316AE3700E78AF4 /* inlines.c in Sources */,
+				2F2B16D82316AE3700E78AF4 /* houdini_html_u.c in Sources */,
+				2F2B16AC2316A9E000E78AF4 /* CMNodeKey.m in Sources */,
+				2F2B16CC2316AB5900E78AF4 /* CMHTMLSubscriptTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		729F53D51A68641400CC7448 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -878,6 +1058,178 @@
 			};
 			name = Test;
 		};
+		2F2B169F2316A9A900E78AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEHY5QF425;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SRCROOT)/CocoaMarkdown/Configuration",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = CocoaMarkdown/module.modulemap;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = CocoaMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/External/cmark/src";
+			};
+			name = Debug;
+		};
+		2F2B16A02316A9A900E78AF4 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEHY5QF425;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SRCROOT)/CocoaMarkdown/Configuration",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = CocoaMarkdown/module.modulemap;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = CocoaMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/External/cmark/src";
+			};
+			name = Test;
+		};
+		2F2B16A12316A9A900E78AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEHY5QF425;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SRCROOT)/CocoaMarkdown/Configuration",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = CocoaMarkdown/module.modulemap;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = CocoaMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/External/cmark/src";
+			};
+			name = Release;
+		};
+		2F2B16A22316A9A900E78AF4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MEHY5QF425;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(SRCROOT)/CocoaMarkdown/Configuration",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = CocoaMarkdown/module.modulemap;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = CocoaMarkdown;
+				PUBLIC_HEADERS_FOLDER_PATH = "Headers/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/External/cmark/src";
+			};
+			name = Deployment;
+		};
 		729F53EE1A68641400CC7448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1095,6 +1447,17 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F2B169E2316A9A900E78AF4 /* Build configuration list for PBXNativeTarget "libCocoaMarkdown-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2B169F2316A9A900E78AF4 /* Debug */,
+				2F2B16A02316A9A900E78AF4 /* Test */,
+				2F2B16A12316A9A900E78AF4 /* Release */,
+				2F2B16A22316A9A900E78AF4 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		729F53D41A68641300CC7448 /* Build configuration list for PBXProject "CocoaMarkdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
