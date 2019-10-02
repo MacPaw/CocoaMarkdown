@@ -650,7 +650,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Indragie Karunaratne";
 				TargetAttributes = {
 					2F2B16972316A9A900E78AF4 = {
@@ -669,10 +669,9 @@
 			};
 			buildConfigurationList = 729F53D41A68641300CC7448 /* Build configuration list for PBXProject "CocoaMarkdown" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
