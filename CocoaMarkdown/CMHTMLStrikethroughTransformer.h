@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMHTMLElementTransformer.h"
-#import "CMPlatformDefines.h"
+#import <CocoaMarkdown/CMHTMLElementTransformer.h>
+#import <CocoaMarkdown/CMPlatformDefines.h>
 
 /**
  Transforms HTML strikethrough elements (<s></s>) into attributed strings.

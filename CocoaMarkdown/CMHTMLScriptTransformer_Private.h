@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Indragie Karunaratne. All rights reserved.
 //
 
-#import "CMHTMLScriptTransformer.h"
+#import <CocoaMarkdown/CMHTMLScriptTransformer.h>
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

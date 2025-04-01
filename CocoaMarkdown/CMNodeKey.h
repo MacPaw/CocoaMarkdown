@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMNode.h"
+#import <CocoaMarkdown/CMNode.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

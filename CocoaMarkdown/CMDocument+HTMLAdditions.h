@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Indragie Karunaratne. All rights reserved.
 //
 
-#import "CMDocument.h"
-#import "CMHTMLRenderer.h"
+#import <CocoaMarkdown/CMDocument.h>
+#import <CocoaMarkdown/CMHTMLRenderer.h>
 
 @interface CMDocument (HTMLAdditions)
 

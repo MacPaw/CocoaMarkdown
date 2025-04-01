@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMHTMLScriptTransformer.h"
+#import <CocoaMarkdown/CMHTMLScriptTransformer.h>
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

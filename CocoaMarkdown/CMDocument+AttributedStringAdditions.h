@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Indragie Karunaratne. All rights reserved.
 //
 
-#import "CMDocument.h"
+#import <CocoaMarkdown/CMDocument.h>
 
 @class CMTextAttributes;
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CMHTMLElementTransformer.h"
+#import <CocoaMarkdown/CMHTMLElementTransformer.h>
 
 @interface CMHTMLScriptTransformer : NSObject <CMHTMLElementTransformer>
 @end
